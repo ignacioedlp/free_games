@@ -11,17 +11,17 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white shadow dark:bg-gray-800">
-        <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-          <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
+      <nav className="bg-background text-title-white">
+        <div className="py-4 md:flex md:justify-between md:items-center">
+          <div className="flex items-center justify-between px-3 ">
+            <div className="text-2xl font-bold transition-colors duration-200 transform lg:text-3xl">
               <Link href="#">GameCenter</Link>
             </div>
 
             <div className="flex md:hidden">
               <button
                 type="button"
-                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className=""
                 aria-label="toggle menu"
                 onClick={handleMenu}
               >
@@ -34,22 +34,6 @@ function Navbar() {
               </button>
             </div>
           </div>
-          {menuActive ? (
-            <div className="items-center md:flex" id="menu">
-              <div className="flex flex-col md:flex-row md:mx-6">
-                <div className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">
-                  <Link href="/">Home</Link>
-                </div>
-
-                <div className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">
-                  <Link href="/categorias">Games categories</Link>
-                </div>
-                <div className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">
-                  <Link href="/contact">Contact</Link>
-                </div>
-              </div>
-            </div>
-          ) : null}
         </div>
       </nav>
     </div>

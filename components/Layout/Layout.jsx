@@ -4,11 +4,11 @@ import Footer from "../Footer/Footer.jsx";
 
 function Layout({ children }) {
   return (
-    <>
+    <div className="bg-background">
       <Navbar />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
 
