@@ -3,22 +3,22 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer className="flex flex-col items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 sm:flex-row">
+      <footer className="flex flex-col items-center justify-between px-6 py-4 bg-background text-title-white sm:flex-row">
         <a
           href="#"
-          className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+          className="text-xl font-bold text-title-white"
         >
           GameCenter
         </a>
 
-        <p className="py-2 text-gray-800 dark:text-white sm:py-0">
+        <p className="py-2 text-title-white sm:py-0">
           All rights reserved
         </p>
 
         <div className="flex -mx-2">
           <a
             href="#"
-            className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            className="mx-2 text-title-white"
             aria-label="Reddit"
           >
             <svg
@@ -33,7 +33,7 @@ function Footer() {
 
           <a
             href="#"
-            className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            className="mx-2 text-title-white"
             aria-label="Facebook"
           >
             <svg
@@ -48,7 +48,7 @@ function Footer() {
 
           <a
             href="#"
-            className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            className="mx-2 text-title-white"
             aria-label="Github"
           >
             <svg
